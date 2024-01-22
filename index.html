@@ -22,28 +22,31 @@
     <!-- header section-->
     <header class="top-header">
       <div class="container header-container">
-        <!-- navigation bar -->
-        <nav class="main-navigation-container">
-          <!-- logo -->
-          <a class="logo link" href="./index.html"
-            >Web<span class="part-of-logo">Studio</span>
+        <div class="header-logo-wrap">
+          <a href="https://secaraadrian.github.io/goit-markup-hw-07/">
+            <span class="web">WEB</span><span class="studio">STUDIO</span>
           </a>
-          <!-- studio, portofolio, contacts -->
-          <ul class="navigation-list list">
-            <li>
+        </div>
+        <button type="button" class="mobile-menu-icon js-open-menu" aria-expanded="false" 
+        aria-controls="mobile-menu">
+        <svg class="icon-menu-mobile">
+        <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+          <ul class="navigation-list">
+            <li class="nav-list-item">
               <a class="nav-link link" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
-        </nav>
-        <!-- contact adress section -->
-        <address class="address-container">
-          <ul class="list">
+        <!-- contact address section -->
+        <address>
+          <ul class="list address-container">
             <li>
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -57,29 +60,92 @@
           </ul>
         </address>
       </div>
+       <!-- mobile menu -->
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-nav-liks-wrapper">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="mobile-close-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="menu mobile-menu">
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
+        </li>
+        </ul>
+        </div>
+        <div class="mobile-address-links-wrapper">
+        <address class="mobile-address">
+        <div class="mobile-address-wrap">
+          <a class="mobile-address-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+        <div>
+          <a class="mobile-address-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        </address>
+          <ul class="mobile-icon-container">
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            </ul>
+        </div> 
+      </div>
     </header>
     <main>
       <!--hero section-->
-      <section class="hero">
+      <section class="section hero">
         <!--Hero-->
         <div class="hero-container container">
-          <h1 class="effective">Effective Solutions for Your Business</h1>
+          <h1 class="effective">Effective Solutions<br> for Your Business</h1>
           <button class="button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
       <!--two section-->
-      <section class="two-section">
+      <section class="section two-section">
         <div class="container">
           <h2 class="visually-hidden">Title</h2>
-          <ul class="list">
+          <ul class="features-list">
             <li class="position">
-              <div class="icon-list">
-                <svg width="64" height="64">
+                <svg class="icon-list" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
-              </div>
               <h3 class="strategy">Strategy</h3>
               <p class="phara">
                 Our goal is to identify the business problem to walk away with
@@ -87,23 +153,19 @@
               </p>
             </li>
             <li class="position">
-              <div class="icon-list">
-                <svg width="64" height="64">
+                <svg class="icon-list" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
-              </div>
               <h3 class="strategy">Punctuality</h3>
               <p class="phara">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="position">
-              <div class="icon-list">
-                <svg width="64" height="64">
+            <li class="position">              
+                <svg class="icon-list" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
-                </svg>
-              </div>
+                </svg>              
               <h3 class="strategy">Diligence</h3>
               <p class="phara">
                 Research and confirm brands that present the strongest digital
@@ -111,11 +173,11 @@
               </p>
             </li>
             <li class="position">
-              <div class="icon-list">
-                <svg width="64" height="64">
+             
+                <svg class="icon-list" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
-              </div>
+              
               <h3 class="strategy">Technologies</h3>
               <p class="phara">
                 Design practice focused on digital experiences. We bring forth a
@@ -126,7 +188,7 @@
         </div>
       </section>
       <!--three section-->
-      <section class="three-section">
+      <section class="section three-section">
         <div class="main2-container container">
           <h2 class="what">What are we doing</h2>
           <ul class="list-image list">
@@ -158,8 +220,8 @@
         </div>
       </section>
       <!--four section Our team-->
-      <section class="section-four-container">
-        <div class="container">
+      <section class="section four-container">
+        <div class="container container-team">
           <h2 class="what">Our Team</h2>
           <ul class="four list">
             <!-- the first member -->
@@ -171,7 +233,7 @@
                 class="photo"
               />
               <div class="team-container">
-                <h3 class="strategy">Mark Guerrero</h3>
+                <h3 class="section-team-item-name">Mark Guerrero</h3>
                 <p class="phara p-team">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-icon">
@@ -216,7 +278,7 @@
                 class="photo"
               />
               <div class="team-container">
-                <h3 class="strategy">Tom Ford</h3>
+                <h3 class="section-team-item-name">Tom Ford</h3>
                 <p class="phara p-team">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-icon">
@@ -260,7 +322,7 @@
                 class="photo"
               />
               <div class="team-container">
-                <h3 class="strategy">Camila Garcia</h3>
+                <h3 class="section-team-item-name">Camila Garcia</h3>
                 <p class="phara p-team">Marketing</p>
                 <ul class="social-list">
                   <li class="social-icon">
@@ -304,7 +366,7 @@
                 class="photo"
               />
               <div class="team-container">
-                <h3 class="strategy">Daniel Wilson</h3>
+                <h3 class="section-team-item-name">Daniel Wilson</h3>
                 <p class="phara p-team">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-icon">
@@ -343,10 +405,10 @@
       </section>
 
       <!--section five-->
-      <section class="section-five-container">
-        <div class="container">
+      <section class="section section-five-container">
+        <div class="container container-clients">
           <h2 class="customers">Customers</h2>
-          <ul class="list-cutomers">
+          <ul class="list-customers">
             <li class="list-icon">
               <a class="client-link" href="">
                 <svg width="104" height="56" class="svg-icon">
@@ -393,18 +455,21 @@
         </div>
       </section>
     </main>
+    <!--Footer-->
     <footer class="footer-container">
       <div class="container s-m-footer">
         <div class="div-element-footer">
+          <div class="footer-logo-wrap">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-footer-p">Studio</span></a
-          >
+          ></div>
           <p class="footer-additional-description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            Increase the flow of customers and
+            sales for your business with digital
+            marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-media">
           <p class="s-m-phara">Social media</p>
           <ul class="s-m-list">
             <li class="social-icon">
@@ -437,9 +502,9 @@
             </li>
           </ul>
         </div>
-        <div class="formular-continer">
+        <div class="form-container">
           <p class="form-title">Subscribe</p>
-          <form class="formular">
+          <form class="subscription-form">
           <label class="label-form">
             <input name="email" class="input-form" type="email" placeholder="E-mail">
           </label>
@@ -455,7 +520,7 @@
     <div class="footer-modal-container is-hidden" data-modal>
       <div class="modal-box">
         <button class="button-open-close" type="button" data-modal-close>
-          <svg class="svg-icon" width="8" height="8">
+          <svg class="svg-icon-x" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
@@ -513,6 +578,13 @@
         </form>
       </div>
     </div>    
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

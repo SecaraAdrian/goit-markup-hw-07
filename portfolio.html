@@ -22,29 +22,34 @@
   <body class="body-section">
     <!-- header section -->
     <header class="top-header">
-      <!-- navigation bar -->
       <div class="container header-container">
-        <nav class="main-navigation-container">
-          <!-- logo -->
-          <a class="logo link" href="./index.html"
-            >Web<span class="part-of-logo">Studio</span>
+        
+        <div class="header-logo-wrap">
+          <a href="https://secaraadrian.github.io/goit-markup-hw-07/">
+            <span class="web">WEB</span><span class="studio">STUDIO</span>
           </a>
-          <!-- studio, portofolio, contacts -->
-          <ul class="navigation-list list">
-            <li>
+        </div>
+        <button type="button" class="mobile-menu-icon js-open-menu" aria-expanded="false" 
+        aria-controls="mobile-menu">
+        <svg class="icon-menu-mobile">
+        <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+          <ul class="navigation-list">
+            <li class="nav-list-item">
               <a class="nav-link link" href="./index.html">Studio</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link link" href="./portfolio.html">Portfolio</a>
             </li>
-            <li>
+            <li class="nav-list-item">
               <a class="nav-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!-- contact adress section -->
-        <address class="address-container">
-          <ul class="list">
+        <!-- contact address section -->
+        <address>
+          <ul class="list address-container">
             <li>
               <a class="address-link link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -57,6 +62,71 @@
             </li>
           </ul>
         </address>
+      </div>
+       <!-- mobile menu -->
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <div class="mobile-nav-liks-wrapper">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="mobile-close-icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <ul class="menu mobile-menu">
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link active">Studio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./portfolio.html" class="mobile-nav-item-link">Portfolio</a>
+        </li>
+        <li class="mobile-nav">
+          <a href="./index.html" class="mobile-nav-item-link">Contacts</a>
+        </li>
+        </ul>
+        </div>
+        <div class="mobile-address-links-wrapper">
+        <address class="mobile-address">
+        <div class="mobile-address-wrap">
+          <a class="mobile-address-phone" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </div>
+        <div>
+          <a class="mobile-address-email" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </div>
+        </address>
+          <ul class="mobile-icon-container">
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icon">
+              <a class="social-media-link" href="social-media-link">
+                <svg class="svg-social" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            </ul>
+        </div> 
       </div>
     </header>
     <main>
@@ -242,15 +312,17 @@
     <footer class="footer-container">
       <div class="container s-m-footer">
         <div class="div-element-footer">
+          <div class="footer-logo-wrap">
           <a href="./index.html" class="logo link"
             >Web<span class="logo-footer-p">Studio</span></a
-          >
+          ></div>
           <p class="footer-additional-description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
+            Increase the flow of customers and<br>
+            sales for your business with digital<br>
+            marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-media">
           <p class="s-m-phara">Social media</p>
           <ul class="s-m-list">
             <li class="social-icon">
@@ -283,9 +355,9 @@
             </li>
           </ul>
         </div>
-        <div class="formular-continer">
+        <div class="form-container">
           <p class="form-title">Subscribe</p>
-          <form class="formular">
+          <form class="subscription-form">
           <label class="label-form">
             <input name="email" class="input-form" type="email" placeholder="E-mail">
           </label>
