@@ -66,6 +66,9 @@ header {
 .container{
   margin: 0 auto;
 }
+.section-advantages{
+  padding: 96px 16px;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -685,10 +688,18 @@ header {
     color: var(--SLATE);
  } */
  .phara {
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0.32px;
   color: var(--SLATE);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  word-wrap: break-word;
+ }
+ @media screen and (min-width: 1158px) {
+  .phara {
+    font-weight: 400;
+    font-size: 16px;
+  }
 }
 
  .phara:focus,
@@ -730,14 +741,15 @@ header {
 }
  .what {
     font-size: 36px;
-        line-height: 1.11;
-        text-align: center;
-        letter-spacing: 0.02em;
-        text-transform: capitalize;
-        color: var(--NAVY-BLUE);
-        margin-bottom: 72px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE);
+    margin-bottom: 72px;
+    font-weight: 700;
+    line-height: 40px;
  }
-
 
  .list-image {
     display: flex;
