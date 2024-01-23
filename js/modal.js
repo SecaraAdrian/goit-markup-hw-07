@@ -10,5 +10,19 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
+    const isModalOpen = refs.modal.classList.contains("is-hidden");
+
+    const scrollLockMethod = isModalOpen ? "enableBodyScroll" : "disableBodyScroll";
+    bodyScrollLock[scrollLockMethod](document.body);
   }
 })();
+
+$(document).ready(function () {
+  $('.modal-open, .js-open-menu').on('click', function () {
+    $('body').css('overflow', 'hidden');
+  });
+
+  $('.button-open-close, .js-close-menu').on('click', function () {
+    $('body').css('overflow', 'auto');
+  });
+});
