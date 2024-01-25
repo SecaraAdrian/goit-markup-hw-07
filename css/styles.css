@@ -448,6 +448,7 @@ header {
 } */
 .address-container {
     display: block;
+    display: none;
   }
   @media screen and (min-width: 428px) {
     .address-container {
@@ -668,6 +669,7 @@ header {
   }
 
  .icon-list {
+  display: none;
     width: 264px;
     height: 112px;
   }
@@ -752,6 +754,7 @@ header {
 
  .three-section {
     padding-top: 0;
+    display: none;
   }
   @media screen and (min-width: 428px) {
     .three-section {
